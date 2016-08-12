@@ -13,14 +13,16 @@ import { LowCaloriesPipe } from './calories.pipe';
   pipes: [LowCaloriesPipe],
   directives: [MealComponent, NewMealComponent, EditMealComponent],
   template: `
+  <new-meal (onSubmitNewMeal) = "createMeal($event[0], $event[1], $event[2])"></new-meal>
   <select (change)="onChange($event.target.value)" class="filter">
     <option value="all" selected="selected">Show All</option>
     <option value="lowCalories">Show Low Calorie Meals</option>
     <option value="highCalories">Show High Calorie Meals</option>
   </select>
-  <meal-display *ngFor="#currentMeal of mealList | lowCalories:filterCalories" (click)="editMeal(currentMeal)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal" ></meal-display>
   <edit-meal *ngIf="selectedMeal" [meal]="selectedMeal"></edit-meal>
-  <new-meal (onSubmitNewMeal) = "createMeal($event[0], $event[1], $event[2])"></new-meal>
+  <meal-display *ngFor="#currentMeal of mealList | lowCalories:filterCalories" (click)="editMeal(currentMeal)" [class.selected]="currentMeal === selectedMeal" [meal]="currentMeal" >
+  </meal-display>
+
   `
 })
 export class MealListComponent {

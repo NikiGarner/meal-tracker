@@ -43,7 +43,7 @@ System.register(['angular2/core', './meal.model', './meal-list.component'], func
                     core_1.Component({
                         selector: 'my-app',
                         directives: [meal_list_component_1.MealListComponent],
-                        template: "\n    <div class=\"container\">\n      <h1>Meal Tracker</h1>\n      <meal-list [mealList]=\"meals\"></meal-list>\n    </div>\n  "
+                        template: "\n    <div class=\"container\">\n      <header>\n      <h1>Meal Journal</h1>\n      <img src = \"resources/images/flatware.jpeg\">\n      </header>\n      <meal-list [mealList]=\"meals\"></meal-list>\n    </div>\n  "
                     }), 
                     __metadata('design:paramtypes', [])
                 ], AppComponent);

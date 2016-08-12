@@ -1,0 +1,71 @@
+@import 'https://fonts.googleapis.com/css?family=Belgrano|Crete+Round|Homemade+Apple|Rozha+One';
+$bottom: 20px;
+$border: 1px dotted #9BB4CE;
+
+.container {
+  font-family: 'Belgrano', serif;
+header{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column-reverse;
+  margin-bottom: 50px;
+  h1 {
+    font-family: 'Homemade Apple', cursive;
+    font-size: 4em;
+    text-align: center;
+  }
+}
+.input{
+  border-bottom: $border;
+  padding-bottom: $bottom;
+  margin-bottom: $bottom;
+  h3 {
+    border-bottom: $border;
+  }
+  .input-lg {
+    margin-right: $bottom;
+    margin-top: $bottom;
+  }
+  button {
+    border-radius: 5px;
+    background: #9BB4CE;
+    border: $border;
+}
+}
+.filter {
+  margin-bottom: $bottom;
+}
+meal-display {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.list {
+  .title {
+    font-size: 1em;
+    color: #9BB4CE;
+  }
+}
+
+#edit {
+  margin-bottom: $bottom;
+  padding-bottom: $bottom;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  flex-direction: row;
+  border-bottom: $border;
+  >h3 {
+    padding-right: 10px;
+  }
+  .input-lg {
+    margin-right: $bottom;
+    margin-top: $bottom;
+    width: 50%;
+  }
+}
+
+}
