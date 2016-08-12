@@ -27,9 +27,16 @@ System.register(['angular2/core', './meal.model', './meal-list.component'], func
             AppComponent = (function () {
                 function AppComponent() {
                     this.meals = [
-                        new meal_model_1.Meal("Clyde Common", "American", "SW 11th & Stark", 4, [], []),
-                        new meal_model_1.Meal("808", "Hawaiian", "SW 10th & Alder", 2, [], []),
-                        new meal_model_1.Meal("Tabor", "Czech", "SW 5th & Oak", 2, [], []),
+                        new meal_model_1.Meal(8 / 10 / 16, "Bagel", "Cinnamon-raisin bagel with butter for breakfast", 500),
+                        new meal_model_1.Meal(8 / 10 / 16, "Kale Salad", "Kale salad with cranberries and sunflower seeds for lunch", 200),
+                        new meal_model_1.Meal(8 / 10 / 16, "Chicken Garlic Pizza", "3 slices of pizza", 1000),
+                        new meal_model_1.Meal(8 / 11 / 16, "Bagel", "Cinnamon-raisin bagel with butter for breakfast", 500),
+                        new meal_model_1.Meal(8 / 11 / 16, "Mocha", "Grande mocha for Starbucks", 400),
+                        new meal_model_1.Meal(8 / 11 / 16, "Kale Salad", "Kale salad with cranberries and sunflower seeds for lunch", 200),
+                        new meal_model_1.Meal(8 / 11 / 16, "Hummus", "1/2 cup for lunch", 200),
+                        new meal_model_1.Meal(8 / 11 / 16, "MultiGrain Chips", "Food is good chips...nomnom for lunch", 150),
+                        new meal_model_1.Meal(8 / 11 / 16, "Salmon", "1 patty for dinner", 150),
+                        new meal_model_1.Meal(8 / 11 / 16, "Fettuccine", "2 cups of pasta with sauce for dinner", 900),
                     ];
                     console.log("Meals created");
                 }
