@@ -1,12 +1,12 @@
-# EPICODUS STUDENT PROJECT
-## JavaScript | Angular JS
+# Meal Tracker
+## JavaScript | Angular2 Independent Project Week 2
 
-#### Template in Angular2, August 9, 2016
+#### August 12, 2016
 
-#### By _**Maldon Meehan, Epicodus**_
+#### By _**Niki Garner**_
 
 ## Description
-Angular Template....
+A website that takes user input to track meal names, details, and calories. The site display the inputed information in a list. The site also features the ability to edit input. Also, there is the ability to sort the list based on calorie amount.
 
 ## Setup/Installation Requirements
 
@@ -39,10 +39,10 @@ If you run into any issues or have questions, ideas, or concerns, please feel fr
 ## Technologies Used
 
 * JavaScript
-* jQuery
+* Angular2
 * Bower
 * NPM
-* GitHub API
+* Typescript
 
 ### License
 
