@@ -16,18 +16,16 @@ export class AppComponent {
   public meals: Meal[];
   constructor(){
     this.meals = [
-      new Meal(8/10/16, "Bagel", "Cinnamon-raisin bagel with butter for breakfast", 500),
-      new Meal(8/10/16, "Kale Salad", "Kale salad with cranberries and sunflower seeds for lunch", 200),
-      new Meal(8/10/16, "Chicken Garlic Pizza", "3 slices of pizza", 1000),
-      new Meal(8/11/16, "Bagel", "Cinnamon-raisin bagel with butter for breakfast", 500),
-      new Meal(8/11/16, "Mocha", "Grande mocha for Starbucks", 400),
-      new Meal(8/11/16, "Kale Salad", "Kale salad with cranberries and sunflower seeds for lunch", 200),
-      new Meal(8/11/16, "Hummus", "1/2 cup for lunch", 200),
-      new Meal(8/11/16, "MultiGrain Chips", "Food is good chips...nomnom for lunch", 150),
-      new Meal(8/11/16, "Salmon", "1 patty for dinner", 150),
-      new Meal(8/11/16, "Fettuccine", "2 cups of pasta with sauce for dinner", 900),
+      new Meal("Bagel", "Cinnamon-raisin bagel with butter for breakfast", 500),
+      new Meal("Kale Salad", "Kale salad with cranberries and sunflower seeds for lunch", 200),
+      new Meal("Chicken Garlic Pizza", "3 slices of pizza", 1000),
+      new Meal("Bagel", "Cinnamon-raisin bagel with butter for breakfast", 500),
+      new Meal("Mocha", "Grande mocha for Starbucks", 400),
+      new Meal("Kale Salad", "Kale salad with cranberries and sunflower seeds for lunch", 200),
+      new Meal("Hummus", "1/2 cup for lunch", 200),
+      new Meal("MultiGrain Chips", "Food is good chips...nomnom for lunch", 150),
+      new Meal("Salmon", "1 patty for dinner", 150),
+      new Meal("Fettuccine", "2 cups of pasta with sauce for dinner", 900),
     ]
-    console.log("Meals created")
   }
-
 }
